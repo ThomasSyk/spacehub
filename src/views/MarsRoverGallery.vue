@@ -40,7 +40,6 @@ export default {
       handler(){
         //If-Abfrage ob Daten fuer comp MarsRoverGalerie Gedacht sind 
         if(this.selection == 'curiosity' || this.selection == 'opportunity' || this.selection == 'spirit'){
-          alert('Rover')
           console.log(this.selection)
           axios.get('https://api.nasa.gov/mars-photos/api/v1/rovers/'+ this.selection +'/photos?sol=' + this.sol + '&page=1&api_key=FAtndhzJANYxmE62dLaOSEpyyEyd2lB3E2b2nrdh').then ( response => {
             console.log(response.data.photos); // console.log nur zu testszwecken um die api response zu Pruefen

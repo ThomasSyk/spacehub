@@ -15,7 +15,7 @@
         @click="overlayActivate = !overlayActivate; imgLink = result.links[0].href; description = result.data[0].description"
         >
             <v-img 
-            :src="result.links[0].href"
+            :src="result.links[0].href.replace('http', 'https')"
             aspect-ratio="1"
             class="grey lighten-2"
             >
@@ -62,8 +62,8 @@ export default {
       console.log(value)
       this.overlayActivate = value; // someValue
       console.log(this.overlayActivate)
-    },
-  },
+    }
+  }
 }
 </script>
 
