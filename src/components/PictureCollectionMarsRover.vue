@@ -23,7 +23,7 @@
                         </v-btn>
                     </v-overlay>  
                     <v-img 
-                    :src="result.img_src"
+                    :src="result.img_src.replace('http', 'https')"
                     aspect-ratio="1"
                     class="grey lighten-2"
                     >
