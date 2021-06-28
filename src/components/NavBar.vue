@@ -24,7 +24,7 @@
                     to="/gallery"
                     @click="onClickButton(pickedGallery[0])"
                     >
-                    Galerie
+                    Gallery
                     </v-btn>
                 </template>
 
